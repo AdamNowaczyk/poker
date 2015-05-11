@@ -4,21 +4,13 @@ var HandEvaluator = function () {
 
     var getRanks = function (cards) {
         return cards.reduce(function (acc, card) {
-            if (typeof acc[card.rank] === 'undefined') {
-                acc[card.rank] = 1;
-            } else {
-                acc[card.rank]++;
-            }
+            acc[card.rank] = acc[card.rank] ? acc[card.rank] + 1 : 1;
             return acc;
         }, {});
     };
     var getSuits = function (cards) {
         return cards.reduce(function (acc, card) {
-            if (typeof acc[card.suit] === 'undefined') {
-                acc[card.suit] = 1;
-            } else {
-                acc[card.suit]++;
-            }
+            acc[card.suit] = acc[card.suit] ? acc[card.suit] + 1 : 1;
             return acc;
         }, {});
     };

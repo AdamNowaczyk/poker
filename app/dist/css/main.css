@@ -28,11 +28,14 @@ body {
   .player .name {
     color: #fff; }
   .player .result {
-    color: #fff;
     display: inline-block;
-    width: 300px; }
+    font-family: Helvetica;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #f00;
+    text-transform: uppercase; }
     .player .result.winner {
-      color: #f00; }
+      color: #0f0; }
   .player._1 {
     top: -100px;
     left: 550px; }
