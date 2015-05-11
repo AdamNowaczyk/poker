@@ -1,0 +1,218 @@
+body {
+  background-color: #000; }
+
+#app {
+  font-weight: bold; }
+
+.svg-card {
+  width: 60px;
+  margin: 0;
+  padding: 0; }
+
+#board {
+  position: relative;
+  background: url("../images/poker-table-big.jpg") no-repeat;
+  width: 1274px;
+  height: 716px;
+  margin: 0 auto;
+  margin-top: 100px; }
+
+.table {
+  position: absolute;
+  top: 300px;
+  left: 500px; }
+
+.player {
+  position: absolute;
+  white-space: nowrap; }
+  .player .name {
+    color: #fff; }
+  .player .result {
+    color: #fff;
+    display: inline-block;
+    width: 300px; }
+    .player .result.winner {
+      color: #f00; }
+  .player._1 {
+    top: -100px;
+    left: 550px; }
+  .player._2 {
+    top: 270px;
+    left: 1270px; }
+    .player._2 .result {
+      display: block; }
+  .player._3 {
+    top: 620px;
+    left: 550px; }
+  .player._4 {
+    top: 270px;
+    left: -150px; }
+    .player._4 .result {
+      display: block; }
+
+.card {
+  background: url("../images/poker-cards.gif") no-repeat;
+  width: 82px;
+  height: 118px;
+  background-position: 0 -468px;
+  display: inline-block; }
+  .card._2H {
+    background-position-x: 0px;
+    background-position-y: 0px; }
+  .card._3H {
+    background-position-x: -81px;
+    background-position-y: 0px; }
+  .card._4H {
+    background-position-x: -162px;
+    background-position-y: 0px; }
+  .card._5H {
+    background-position-x: -243px;
+    background-position-y: 0px; }
+  .card._6H {
+    background-position-x: -324px;
+    background-position-y: 0px; }
+  .card._7H {
+    background-position-x: -405px;
+    background-position-y: 0px; }
+  .card._8H {
+    background-position-x: -486px;
+    background-position-y: 0px; }
+  .card._9H {
+    background-position-x: -567px;
+    background-position-y: 0px; }
+  .card._10H {
+    background-position-x: -648px;
+    background-position-y: 0px; }
+  .card._JH {
+    background-position-x: -729px;
+    background-position-y: 0px; }
+  .card._QH {
+    background-position-x: -810px;
+    background-position-y: 0px; }
+  .card._KH {
+    background-position-x: -891px;
+    background-position-y: 0px; }
+  .card._AH {
+    background-position-x: -972px;
+    background-position-y: 0px; }
+  .card._2D {
+    background-position-x: 0px;
+    background-position-y: -117px; }
+  .card._3D {
+    background-position-x: -81px;
+    background-position-y: -117px; }
+  .card._4D {
+    background-position-x: -162px;
+    background-position-y: -117px; }
+  .card._5D {
+    background-position-x: -243px;
+    background-position-y: -117px; }
+  .card._6D {
+    background-position-x: -324px;
+    background-position-y: -117px; }
+  .card._7D {
+    background-position-x: -405px;
+    background-position-y: -117px; }
+  .card._8D {
+    background-position-x: -486px;
+    background-position-y: -117px; }
+  .card._9D {
+    background-position-x: -567px;
+    background-position-y: -117px; }
+  .card._10D {
+    background-position-x: -648px;
+    background-position-y: -117px; }
+  .card._JD {
+    background-position-x: -729px;
+    background-position-y: -117px; }
+  .card._QD {
+    background-position-x: -810px;
+    background-position-y: -117px; }
+  .card._KD {
+    background-position-x: -891px;
+    background-position-y: -117px; }
+  .card._AD {
+    background-position-x: -972px;
+    background-position-y: -117px; }
+  .card._2C {
+    background-position-x: 0px;
+    background-position-y: -234px; }
+  .card._3C {
+    background-position-x: -81px;
+    background-position-y: -234px; }
+  .card._4C {
+    background-position-x: -162px;
+    background-position-y: -234px; }
+  .card._5C {
+    background-position-x: -243px;
+    background-position-y: -234px; }
+  .card._6C {
+    background-position-x: -324px;
+    background-position-y: -234px; }
+  .card._7C {
+    background-position-x: -405px;
+    background-position-y: -234px; }
+  .card._8C {
+    background-position-x: -486px;
+    background-position-y: -234px; }
+  .card._9C {
+    background-position-x: -567px;
+    background-position-y: -234px; }
+  .card._10C {
+    background-position-x: -648px;
+    background-position-y: -234px; }
+  .card._JC {
+    background-position-x: -729px;
+    background-position-y: -234px; }
+  .card._QC {
+    background-position-x: -810px;
+    background-position-y: -234px; }
+  .card._KC {
+    background-position-x: -891px;
+    background-position-y: -234px; }
+  .card._AC {
+    background-position-x: -972px;
+    background-position-y: -234px; }
+  .card._2S {
+    background-position-x: 0px;
+    background-position-y: -351px; }
+  .card._3S {
+    background-position-x: -81px;
+    background-position-y: -351px; }
+  .card._4S {
+    background-position-x: -162px;
+    background-position-y: -351px; }
+  .card._5S {
+    background-position-x: -243px;
+    background-position-y: -351px; }
+  .card._6S {
+    background-position-x: -324px;
+    background-position-y: -351px; }
+  .card._7S {
+    background-position-x: -405px;
+    background-position-y: -351px; }
+  .card._8S {
+    background-position-x: -486px;
+    background-position-y: -351px; }
+  .card._9S {
+    background-position-x: -567px;
+    background-position-y: -351px; }
+  .card._10S {
+    background-position-x: -648px;
+    background-position-y: -351px; }
+  .card._JS {
+    background-position-x: -729px;
+    background-position-y: -351px; }
+  .card._QS {
+    background-position-x: -810px;
+    background-position-y: -351px; }
+  .card._KS {
+    background-position-x: -891px;
+    background-position-y: -351px; }
+  .card._AS {
+    background-position-x: -972px;
+    background-position-y: -351px; }
+
+#score {
+  font-size: 14px;
+  color: #fff; }
