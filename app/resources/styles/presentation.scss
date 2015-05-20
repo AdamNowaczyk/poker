@@ -1,0 +1,33 @@
+.logo {
+  position: absolute;
+  background: url('/resources/images/sm_icon.png') no-repeat;
+  width: 142px;
+  height: 142px;
+  top: 50px;
+  left: 100px;
+}
+
+.reveal {
+  h1, h2, h3 {
+    margin-bottom: 50px;
+  }
+
+  .obj {
+
+    table {
+      margin: 15px;
+      border-collapse: collapse;
+      display: inline-table;
+    }
+
+    table, th, td {
+      border: 1px solid #fff;
+      padding: 10px;
+    }
+
+    th {
+      text-align: center;
+    }
+  }
+}
+

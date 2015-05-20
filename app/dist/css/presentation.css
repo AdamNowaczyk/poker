@@ -1,0 +1,22 @@
+.logo {
+  position: absolute;
+  background: url("/resources/images/sm_icon.png") no-repeat;
+  width: 142px;
+  height: 142px;
+  top: 50px;
+  left: 100px; }
+
+.reveal h1, .reveal h2, .reveal h3 {
+  margin-bottom: 50px; }
+
+.reveal .obj table {
+  margin: 15px;
+  border-collapse: collapse;
+  display: inline-table; }
+
+.reveal .obj table, .reveal .obj th, .reveal .obj td {
+  border: 1px solid #fff;
+  padding: 10px; }
+
+.reveal .obj th {
+  text-align: center; }

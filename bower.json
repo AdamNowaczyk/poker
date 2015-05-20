@@ -13,7 +13,9 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "latest"
-  },
-  "devDependencies": {}
+    "jquery": "latest",
+    "reveal-js": "latest",
+    "requirejs": "latest",
+    "ace-builds": "latest"
+  }
 }

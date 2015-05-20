@@ -1,0 +1,214 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Szkolenie JS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="/bower_components/reveal-js/css/reveal.min.css">
+    <link rel="stylesheet" href="/bower_components/reveal-js/css/theme/night.css">
+
+    <link rel="stylesheet" href="/dist/css/presentation.css">
+</head>
+<body>
+
+<div class="logo"></div>
+
+<div class="reveal">
+    <div class="slides">
+
+        <section>
+            <h1>Szkolenie JS</h1>
+
+            <p>
+                Adam Nowaczyk (<a href="mailto:adam.nowaczyk@softwaremind.pl">adam.nowaczyk@softwaremind.pl</a>)
+            </p>
+        </section>
+
+        <section>
+            <h2>Agenda</h2>
+            <ul>
+                <li>
+                    <strong>Modułowość kodu JS</strong>
+
+                    <p>
+                        nie tylko AMD czy CommonJS, ale ogólnie jak dzielić kod JS, żeby ułatwić jego późniejsze
+                        utrzymanie
+                    </p>
+                </li>
+                <li>
+                    <strong>Wzorce projektowe w JS</strong>
+
+                    <p>
+                        Może nawet nie będą to konkretne wzorce (chociaż na pewno omówię module pattern czy ogólnie
+                        podejście do dziedziczenia w JS), ale chciałbym też opowiedzieć o typowych zastosowaniach JS i
+                        jakich podejść się trzymać (np. eventy w JS, deferred object itp.).
+                    </p>
+                </li>
+                <li>
+                    <strong>Testowanie kodu</strong>
+
+                    <p>
+                        Mogę omówić Jasmine i Mocha (jak bardzo ktoś będzie chciał to i QUnit, chociaż nie używałem).
+                    </p>
+                </li>
+                <li>
+                    <strong>Wydajność aplikacji JS</strong>
+
+                    <p>
+                        uczuliłbym jak działa sam JS i gdzie mogą pojawiać się ‘bottlenecki’, ale do tej pory nie miałem
+                        problemów wydajnościowych stricte JS’owych.
+                        jak nie zasypać backend’u zbyt dużą request’ów :D.
+                    </p>
+                </li>
+                <li>
+                    <strong>Best practices</strong>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Agenda</h2>
+            <ol>
+                <li>
+                    Modułowość kodu JS
+                    <ul>
+                        <li>AMD</li>
+                        <li>CommonJS</li>
+                        <li>Organizacja kodu</li>
+                    </ul>
+                </li>
+                <li>
+                    Wzorce projektowe w JS
+                    <ul>
+                        <li>Dziedziczenie w JS</li>
+                        <li>Module pattern</li>
+                        <li>Deferred Object</li>
+                    </ul>
+                </li>
+                <li>
+                    Testowanie kodu
+                    <ul>
+                        <li>Jasmine</li>
+                        <li>Karma</li>
+                    </ul>
+                </li>
+                <li>
+                    Wydajność aplikacji JS
+                    <ul>
+                        <li>Scope</li>
+                        <li>Debugging</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>JS Objects</h2>
+
+            <a href="/visualizer/?editor=1" target="_blank">Object Visualizer</a>
+        </section>
+
+        <section>
+            <h2>Deferred Object</h2>
+
+            <a href="/visualizer" target="_blank">Object Visualizer</a>
+        </section>
+
+    </div>
+</div>
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/reveal-js/js/reveal.min.js"></script>
+
+<script>
+    Reveal.initialize({
+
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Parallax background image
+        parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+        // Parallax background size
+        parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+        // Amount to move parallax background (horizontal and vertical) on slide change
+        // Number, e.g. 100
+        parallaxBackgroundHorizontal: '',
+        parallaxBackgroundVertical: ''
+
+    });
+</script>
+
+</body>
+</html>
